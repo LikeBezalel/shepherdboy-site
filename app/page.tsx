@@ -111,7 +111,6 @@ export default function Page() {
             </a>
           </div>
           <div className="mt-6 flex items-center gap-4 text-xs text-black/60 dark:text-white/60">
-            <div className="flex items-center gap-1">🌐 {DOMAIN}</div>
             <div className="flex items-center gap-1">📞 (945) 222-5549</div>
             <div className="flex items-center gap-1">✉️ hello@{DOMAIN}</div>
           </div>
