@@ -72,14 +72,17 @@ export default function Page() {
       <header className="sticky top-0 z-40 border-b border-black/5 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-slate-950/70">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
-            <div className="h-6 w-6 rounded-xl bg-black dark:bg-white" />
+             <img 
+              src="/shepherdboy.svg" 
+              alt="Shepherd Boy Logo" 
+              className="h-7 w-auto dark:invert"
+            />
             <span className="font-semibold tracking-tight dark:text-white">{COMPANY_NAME}</span>
           </div>
           <nav className="hidden gap-6 md:flex">
-            <a href="#services" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Services</a>
-            <a href="#work" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Results</a>
+            <a href="#services" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Services</a>           
             <a href="#pricing" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Pricing</a>
-            <a href="#contact" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Contact</a>
+            <a href="#work" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Contact</a>
           </nav>
         </div>
       </header>
@@ -173,9 +176,9 @@ export default function Page() {
              <span
             className="
             transition-all duration-300 ease-in-out
-            hover:bg-gradient-to-r hover:from-blue-400 hover:to-indigo-500
+            hover:bg-gradient-to-r hover:from-indigo-500 hover:to-blue-400
             hover:bg-clip-text hover:text-transparent
-            dark:hover:from-fuchsia-400 dark:hover:to-indigo-500
+            dark:hover:from-indigo-500 dark:hover:to-fuchsia-400
             "
            >
             Recent wins
@@ -259,7 +262,19 @@ export default function Page() {
       <section id="book" className="mx-auto max-w-6xl px-4 pb-24">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
-            <h3 className="text-2xl font-semibold text-black md:text-3xl dark:text-white">Ready to scale? Let’s talk.</h3>
+            <h3 className="text-2xl font-semibold text-black md:text-3xl dark:text-white">
+              {" "}
+             <span
+            className="
+            transition-all duration-300 ease-in-out
+            hover:bg-gradient-to-r hover:from-indigo-500 hover:to-blue-400
+            hover:bg-clip-text hover:text-transparent
+            dark:hover:from-indigo-500 dark:hover:to-fuchsia-400
+            "
+           >
+            Ready to scale? Let’s talk.
+             </span>
+            </h3>
             <p className="mt-3 text-black/70 dark:text-white/70">
               15–20 minute discovery call to map your fastest path to booked appointments. No hard pitch.
             </p>
