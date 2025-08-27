@@ -73,7 +73,7 @@ export default function Page() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
              <img 
-              src="/shepherdboy.svg" 
+              src="/shepherdboy1.png" 
               alt="Shepherd Boy Logo" 
               className="h-7 w-auto dark:invert"
             />
@@ -81,7 +81,7 @@ export default function Page() {
           </div>
           <nav className="hidden gap-6 md:flex">
             <a href="#services" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Services</a>           
-            <a href="#pricing" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Pricing</a>
+            <a href="#prices" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Pricing</a>
             <a href="#work" className="text-sm text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white">Contact</a>
           </nav>
         </div>
@@ -114,9 +114,26 @@ export default function Page() {
             </a>
           </div>
           <div className="mt-6 flex items-center gap-4 text-xs text-black/60 dark:text-white/60">
-            <div className="flex items-center gap-1">📞 (945) 222-5549</div>
-            <div className="flex items-center gap-1">✉️ hello@{DOMAIN}</div>
-          </div>
+  <div className="flex items-center gap-1">
+    📞{" "}
+    <a
+      href="tel:+19452225549"
+      className="underline hover:text-blue-600"
+    >
+      (945) 222-5549
+    </a>
+  </div>
+  <div className="flex items-center gap-1">
+    ✉️{" "}
+    <a
+      href="mailto:hello@shepherdboymarketing.com"
+      className="underline hover:text-blue-600"
+    >
+      hello@shepherdboymarketing.com
+    </a>
+  </div>
+</div>
+
         </div>
 
         {/* GHL Calendar */}
@@ -309,8 +326,9 @@ export default function Page() {
           </p>
 
           <div className="flex items-center justify-start gap-4 md:justify-end">
-            <a href="#" className="text-sm text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white">Privacy</a>
-            <a href="#" className="text-sm text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white">Terms</a>
+            <a href="/privacy" className="text-sm text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white">Privacy</a>
+            <a href="/terms" className="text-sm text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white">Terms</a>
+            <a href="/refund" className="text-sm text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white">Refund</a>
 
             {/* Toggle */}
             <div className="flex items-center space-x-2">
